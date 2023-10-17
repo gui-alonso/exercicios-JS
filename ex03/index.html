@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ex 03 - Verifica idade</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	let nome = prompt("Digite seu nome");
+	// Solicitar ao usuário para inserir sua idade
+	let idade = parseInt(prompt("Digite sua idade:"));
+
+	// Verificar se o valor inserido é um número
+	if (isNaN(idade) || idade < 0) {
+	    alert("Por favor, digite uma idade válida.");
+	} else {
+	    if (idade >= 18) {
+	        alert(nome + ", tem " + idade + " anos e é maior de idade.");
+	    } else {
+	        alert(nome+ ", tem " + idade + " anos e émenor de idade.");
+	    }
+	}
+</script>
+
+</body>
+</html>

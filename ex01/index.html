@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercício 01</title>
+</head>
+<body>
+
+	<p><a style="text-decoration: none;" href="../index.html"><- Voltar</a></p>
+
+<script type="text/javascript">
+	// Solicitar ao usuário para inserir um número
+	let numero = parseInt(prompt("Por favor, digite um número:"));
+
+	// Verificar se o valor inserido é um número
+	if (isNaN(numero)) {
+	    alert("Isso não é um número válido.");
+	} else {
+	    if (numero % 2 === 0) {
+	        alert(`O número ${numero} é par.`);
+	    } else {
+	        alert(`O número ${numero} é ímpar.`);
+	    }
+	}
+</script>
+
+</body>
+</html>
