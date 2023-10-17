@@ -8,6 +8,19 @@ function verificarCPF() {
       alert("CPF inválido!");
     }
   }
+
+  function limitarTamanhoCPF(){
+    const cpfInput = document.getElementById("cpfInput");
+    const maxLenght = 11;
+
+    if(cpfInput.value.length > maxLenght) {
+        cpfInput.value = cpfInput.length.slice(0, maxLenght);
+    }
+  }
+  
+  function limparCampo() {
+    document.getElementById("cpfInput").value = "";
+  }
   
   function validarCPF(cpf) {
     cpf = cpf.replace(/\D/g, '');
@@ -34,8 +47,4 @@ function verificarCPF() {
     }
   
     return (parseInt(cpf.charAt(9)) === primeiroDigito && parseInt(cpf.charAt(10)) === segundoDigito);
-  }
-  
-  function limparCampo() {
-    document.getElementById("cpfInput").value = "";
-  }
+  }  

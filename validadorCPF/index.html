@@ -7,7 +7,7 @@
 <body>
   <h1>Validador de CPF</h1>
   <form id="cpfForm">
-    <input type="text" id="cpfInput" placeholder="Digite o CPF">
+    <input type="text" id="cpfInput" placeholder="Digite o CPF" oninput="limitarTamanhoCPF">
     <button type="button" onclick="verificarCPF()">Validar</button>
     <button type="button" onclick="limparCampo()">Limpar</button>
   </form>
