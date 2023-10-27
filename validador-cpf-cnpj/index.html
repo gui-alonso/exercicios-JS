@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>CPF/CNPJ Input</title>
-    <style>
-        /* Adicione estilos CSS apropriados para o campo de entrada aqui */
-    </style>
-</head>
-<body>
-    <select id="tipoDocumento">
-        <option value="cpf">CPF</option>
-        <option value="cnpj">CNPJ</option>
-    </select>
-    <input type="text" id="documentoInput" placeholder="Digite o CPF ou CNPJ">
-    
-    <script src="script.js"></script>
-</body>
-</html>
+<select id="tipoDocumento">
+    <option value="cpf">CPF</option>
+    <option value="cnpj">CNPJ</option>   
+</select>
+<input type="text" id="documentoInput" placeholder="Digite o CPF ou CNPJ">
+<button type="button" onclick="applyMask()">Validar</button>
+<button type="button" onclick="limparCampo()">Limpar</button>
+
+<script src="../validador-cpf-cnpj/script.js"></script>
