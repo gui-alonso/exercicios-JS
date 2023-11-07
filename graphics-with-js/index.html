@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos com JS</title>
+</head>
+<body>
+
+    <div>
+        <canvas id="myChart" width="300" height="100"></canvas>
+    </div>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+    type: 'line',
+    data: {
+    labels: ['Jan', 'Fev', 'Marc', 'Abr', 'Maio', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    datasets: [
+        {
+        label: 'Homens',
+        data: [0, 20, 17, 17, 15, 18, 20, 20, 31, 40, 38, 30],
+        borderWidth: 2,
+        borderColor: 'green'
+        },
+        {
+        label: 'Mulheres',
+        data: [0, 18, 17, 17, 25, 33, 20, 31, 31, 60, 55, 48],
+        borderWidth: 2,
+        borderColor: 'red'
+        },
+    ]
+    },
+    options: {
+        title: {
+            display: true,
+            text: 'Qtd de alunos do curso técnico de info'
+        }
+    }
+});
+</script>
+</body>
+</html>
